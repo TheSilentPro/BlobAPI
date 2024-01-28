@@ -12,8 +12,7 @@ import java.net.http.HttpRequest;
  */
 public enum Endpoint {
 
-    //BASE("https://blob.build/api"), production endpoint, TODO: Uncomment
-    BASE("https://blob-builds-api-dev.walshydev.workers.dev/api"),
+    BASE("https://blob.build/api"),
 
     // Project
     LIST_PROJECTS("/projects"),

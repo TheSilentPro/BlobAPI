@@ -25,7 +25,7 @@ public class ListBuildsResponse extends BlobResponse<JsonObject> {
         JsonObject main = getData().orElseThrow();
         for (Map.Entry<String, JsonElement> entry : main.entrySet()) { // Loop channel entries
             List<Build> entryBuilds = new ArrayList<>();
-            JsonArray buildsArray = entry.getValue().getAsJsonArray(); // Array of build objcets
+            JsonArray buildsArray = entry.getValue().getAsJsonArray(); // Array of build objects
             for (JsonElement buildEntry : buildsArray) { // Loop array of build objects
                 entryBuilds.add(GSON.fromJson(buildEntry, Build.class)); // Add to temp list
             }

@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 /**
  * @author TheSilentPro (Silent)
  */
+@SuppressWarnings("ClassCanBeRecord")
 public class SimplePayload<T extends JsonElement> implements Payload<T> {
 
     private final T data;

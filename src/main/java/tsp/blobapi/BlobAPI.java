@@ -17,6 +17,7 @@ public class BlobAPI {
     /**
      * Gson instance used for {@link tsp.blobapi.implementation.payload.Payload} data deserialization. Feel free to overwrite.
      */
+    @SuppressWarnings("CanBeFinal")
     public static Gson GSON = new Gson();
 
     public static BlobClient newClient(String token) {

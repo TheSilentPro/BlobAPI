@@ -9,7 +9,7 @@
     <version>0.1.0</version>
 
     <name>BlobAPI</name>
-    <description>Library for the blob.build api</description>
+    <description>Library for the blob build api</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
